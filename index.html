@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width">
+  <title>Filmes Michell</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container"> 
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
+          <a class="navbar-brand" href="#">SPCINE</a>          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Terror</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#">Suspense</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#">Comédia</a>
+              </li>             
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar Filme" aria-label="Search">
+              <button class="btn btn-danger my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </nav>            
+        <div class="row">
+          <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <img class="logo" src="img/logo.jpg" alt="Card image cap">               
+            </div> 
+            <div class="col-md-4"></div>                                      
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="typewriter">
+                    Nesse Verão, O Terror Não Tirará Férias Estréia da Semana BONECO DO MAL...
+                </p>
+            </div>          
+          </div> 
+      <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/Boneco_Mal.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Boneco Do mal</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-danger">Terror</a>
+                <a href="#" class="btn btn-warning">Suspense</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/vingadores.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Vingadores</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-success">Aventura</a>
+                <a href="#" class="btn btn-primary">Ação</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="img/it.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">IT - Capítulo2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-info">Drama</a>
+                <a href="#" class="btn btn-danger">Terror</a>
+              </div>
+            </div>
+          </div> 
+          <div class="col-md-4">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/HomemFormiga.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Homem Formiga</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-success">Aventura</a>                  
+                </div>
+              </div>
+            </div> 
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="img/coringa.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Coringa</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-info">Drama</a>
+                    <a href="#" class="btn btn-danger">Terror</a>
+                  </div>
+                </div>
+              </div> 
+              <div class="col-md-4">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/proximaVitima.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Jennifer 8 - A Próxima Vítima</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-warning">Suspense</a>                     
+                    </div>
+                  </div>
+                </div>          
+      </div> 
+  </div> 
+  <script>
+    function typewriter(element) {
+  
+    let letters = element.innerHTML.split('');
+    element.innerHTML = ''; 
+    
+    letters.forEach(( letter, index, letters ) => {
+      setTimeout(() => element.innerHTML += letter, 100 * index);
+    });
+  }
+
+  const text = document.querySelector('.typewriter');
+  typewriter(text);
+  
+  </script>  
+</body>
+</html>
